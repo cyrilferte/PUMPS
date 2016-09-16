@@ -1,0 +1,19 @@
+<div class="container-fluid backy ">
+<div class="container  ">
+  <div class=" wrapper  ">
+    <h2 class="text-center">  Sizing</h2>
+      <div class=" form-signin">
+      <p class ="text-center">
+    <%= simple_form_for @calculx do |f| %>
+     <%= f.input :techno, collection: ["tech1", "tech2", "tech3"],label: "Techology", prompt:"Technology choose" %>
+     <%= f.input :para1, as: :float, placeholder: "example : 1000", label: "Viscosity liquid kg/m3" %>
+    <%= f.input :para2, as: :float, label: "para2" %>
+    <%= f.input :mail, as: :string, placeholder: "mail", label: "mail" %>
+        </p>
+      <%= f.button :submit, "Calcul", class:"center-block btn-center btn btn-lg btn-warning btn-block btn-biger2"%>
+    <% end %>
+      </div>
+
+  </div>
+</div>
+</div>
