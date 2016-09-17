@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+ <style type="text/css">
+    a {text-decoration: none;}
+   a:hover {text-decoration: none;}
+  </style>
+<div class="card text-center  card-warning">
+  <% if @calcul.techno == "tech1" %>
+    <%= image_tag("tech1.png", class: "img-responsive")%>
+  <% elsif @calcul.techno == "tech2" %>
+    <%= image_tag("tech2.png", class: "img-responsive")%>
+  <% elsif @calcul.techno == "tech3" %>
+    <%= image_tag("tech3.png", class: "img-responsive")%>
+  <% else%>
+    <%= image_tag("tech.png", class: "img-responsive")%>
+  <% end %>
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on
+    the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>

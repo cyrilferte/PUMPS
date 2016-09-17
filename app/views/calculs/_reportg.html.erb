@@ -1,0 +1,20 @@
+
+
+  <div class=" wrapper ">
+    <div class="card card-outline-warning text-xs-center">
+    <h2 class="text-center">  Report</h2>
+      <div class=" form-generation">
+      <p class ="text-center">
+          <% @reportx.calcul_id = @calcul.id %>
+    <%= simple_form_for @reportx do |f| %><br>
+ <div class="hidden">
+     <%= f.input :calcul_id, as: :integer, input_html: { class: 'hidden' } %>
+   </p> </div>
+      <%= f.button :submit, "generate", class:"center-block btn-center btn btn-lg btn-warning btn-block btn-biger2"%>
+    <% end %>
+      </div> <br>
+    <p class =" text-muted"> * generate a pdf with all informations you needs. Contact us if you want more information. </p>
+</div>
+</div>
+
+

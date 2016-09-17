@@ -26,7 +26,7 @@ class CalculsController < ApplicationController
   private
 
   def calcul_params
-    params.require(:calcul).permit(:techno, :para1, :para2, :mail)
+    params.require(:calcul).permit(:techno, :para1, :para2, :mail, :para3, :para4)
   end
 
 end

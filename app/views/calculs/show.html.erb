@@ -1,20 +1,11 @@
-<div class="container-fluid backy ">
-<div class="container  ">
-  <div class=" wrapper  ">
-    <h2 class="text-center">  Sizing</h2>
-      <div class=" form-signin">
-      <p class ="text-center">
-          <% @reportx.calcul_id = @calcul.id %>
-       <%= @calcul.id %>
-        <%= @reportx.calcul_id %>
-    <%= simple_form_for @reportx do |f| %>
- 
-     <%= f.input :calcul_id, as: :integer, placeholder: "mail", label: "mail" %>
-        </p>
-      <%= f.button :submit, "generate", class:"center-block btn-center btn btn-lg btn-warning btn-block btn-biger2"%>
-    <% end %>
-      </div>
-
+<div class="container">
+  <div class="row">
+  <div class="col-md-9">
+       <%= render "reportg" %>
+    </div>
+    <div class="col-md-3">
+     <br><br><br>
+       <%= render "linksale" %>
+    </div>
   </div>
-</div>
 </div>

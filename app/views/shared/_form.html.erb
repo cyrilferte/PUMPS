@@ -6,8 +6,10 @@
       <p class ="text-center">
     <%= simple_form_for @calculx do |f| %>
      <%= f.input :techno, collection: ["tech1", "tech2", "tech3"],label: "Techology", prompt:"Technology choose" %>
-     <%= f.input :para1, as: :float, placeholder: "example : 1000", label: "Viscosity liquid kg/m3" %>
-    <%= f.input :para2, as: :float, label: "para2" %>
+     <%= f.input :para1, as: :float, placeholder: "example : 1000", label: "Pertes de charge" %>
+    <%= f.input :para2, as: :float, label: "Hauteur (‎m)" %>
+     <%= f.input :para3, as: :float, label: "deltaP (‎bar)" %>
+     <%= f.input :para4, as: :float, label: "fluid viscosity(‎Pa·s)" %>
     <%= f.input :mail, as: :string, placeholder: "mail", label: "mail" %>
         </p>
       <%= f.button :submit, "Calcul", class:"center-block btn-center btn btn-lg btn-warning btn-block btn-biger2"%>
